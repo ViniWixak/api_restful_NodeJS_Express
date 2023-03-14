@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const config = require('config');
+const config     = require('config');
 const consign = require('consign');
 
 module.exports = () => {
@@ -18,6 +18,6 @@ module.exports = () => {
     .then('controllers')
     .then('routes')
     .into(app);
-    
+
   return app;
 };
